@@ -35,6 +35,7 @@ const RAW_RUNTIME_STATE =
           ["react-dom", "virtual:8c793a438586ca69a5c99b2389ea3b9444bf2523e1e785b252ce8d16510ff6f86346ea5e90d9974f42cc62bfb2ab308631faef3bccddb2d6414ff8c9e04e1f83#npm:18.3.1"],\
           ["react-router-dom", "virtual:8c793a438586ca69a5c99b2389ea3b9444bf2523e1e785b252ce8d16510ff6f86346ea5e90d9974f42cc62bfb2ab308631faef3bccddb2d6414ff8c9e04e1f83#npm:6.23.1"],\
           ["react-scripts", "virtual:8c793a438586ca69a5c99b2389ea3b9444bf2523e1e785b252ce8d16510ff6f86346ea5e90d9974f42cc62bfb2ab308631faef3bccddb2d6414ff8c9e04e1f83#npm:5.0.1"],\
+          ["sass", "npm:1.77.2"],\
           ["typewriter-effect", "virtual:8c793a438586ca69a5c99b2389ea3b9444bf2523e1e785b252ce8d16510ff6f86346ea5e90d9974f42cc62bfb2ab308631faef3bccddb2d6414ff8c9e04e1f83#npm:2.21.0"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\
@@ -15791,6 +15792,7 @@ const RAW_RUNTIME_STATE =
           ["react-dom", "virtual:8c793a438586ca69a5c99b2389ea3b9444bf2523e1e785b252ce8d16510ff6f86346ea5e90d9974f42cc62bfb2ab308631faef3bccddb2d6414ff8c9e04e1f83#npm:18.3.1"],\
           ["react-router-dom", "virtual:8c793a438586ca69a5c99b2389ea3b9444bf2523e1e785b252ce8d16510ff6f86346ea5e90d9974f42cc62bfb2ab308631faef3bccddb2d6414ff8c9e04e1f83#npm:6.23.1"],\
           ["react-scripts", "virtual:8c793a438586ca69a5c99b2389ea3b9444bf2523e1e785b252ce8d16510ff6f86346ea5e90d9974f42cc62bfb2ab308631faef3bccddb2d6414ff8c9e04e1f83#npm:5.0.1"],\
+          ["sass", "npm:1.77.2"],\
           ["typewriter-effect", "virtual:8c793a438586ca69a5c99b2389ea3b9444bf2523e1e785b252ce8d16510ff6f86346ea5e90d9974f42cc62bfb2ab308631faef3bccddb2d6414ff8c9e04e1f83#npm:2.21.0"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\

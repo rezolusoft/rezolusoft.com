@@ -12,9 +12,10 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build-bulma": "sass --load-path=node_modules src/style.scss public/css/style.css",
+    "start": "npm run build-bulma && react-scripts start",
+    "build": "npm run build-bulma && react-scripts build",
+    "test": "npm run  build-bulma && react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -39,6 +40,7 @@
     "aos": "^2.3.4",
     "bulma": "^1.0.0",
     "react-router-dom": "^6.23.1",
+    "sass": "^1.77.2",
     "typewriter-effect": "^2.21.0"
   }
 }
