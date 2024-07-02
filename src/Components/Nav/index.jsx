@@ -128,7 +128,7 @@ function Nav() {
       {/* header-area-end */}
 
       {/* offcanvas area start */}
-   {/*    <div className="offcanvas__area">
+      <div className="offcanvas__area">
         <div className="offcanvas__wrapper">
           <div className="offcanvas__close">
             <button className="offcanvas__close-btn offcanvas-close-btn">
@@ -197,7 +197,7 @@ function Nav() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className="body-overlay" />
       {/* offcanvas area end */}
