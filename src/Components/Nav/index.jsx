@@ -167,15 +167,15 @@ function Nav() {
             <div className="tp-main-menu-mobile mb-35" />
             <div className="offcanvas__btn">
               <a href="contact.html" className="tp-btn w-100">
-                Getting Started
+                Devis gratuit
               </a>
             </div>
             <div className="offcanvas__contact mb-40">
               <p className="offcanvas__contact-call">
-                <a href="tel:+964-742-44-763">+964 742 44 763</a>
+                <a href="tel:+964-742-44-763">+229 98 87 90 49</a>
               </p>
               <p className="offcanvas__contact-mail">
-                <a href="mailto:info@harry.com">info@seomy.com</a>
+                <a href="mailto:info@harry.com">info@rezolusoft.com</a>
               </p>
             </div>
             <div className="offcanvas__social">
@@ -186,14 +186,9 @@ function Nav() {
                 <i className="fab fa-twitter" />
               </a>
               <a href="#">
-                <i className="fab fa-youtube" />
+                <i className="fab fa-github" />
               </a>
-              <a href="#">
-                <i className="fab fa-linkedin" />
-              </a>
-              <a href="#">
-                <i className="fab fa-instagram" />
-              </a>
+  
             </div>
           </div>
         </div>
