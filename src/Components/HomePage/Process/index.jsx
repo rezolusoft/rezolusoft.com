@@ -1,0 +1,255 @@
+export default function Process() {
+  return (
+    <section className="feature-area pt-40 pb-80">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6">
+            <div className="tpchoose-thumb p-relative mb-50">
+              <img
+                className="tpchoose-border-anim"
+                src="assets/img/banner/choose-2.png"
+                alt=""
+              />
+              <div className="tpchoose-shape d-none d-lg-block">
+                <div className="tpchoose-shape-one d-none d-md-block">
+                  <img src="assets/img/shape/choose-shape-1.png" alt="" />
+                </div>
+                <div className="tpchoose-shape-two">
+                  <img src="assets/img/shape/choose-shape-2.png" alt="" />
+                </div>
+                <div className="tpchoose-shape-three">
+                  <img src="assets/img/shape/choose-shape-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="feature-content-4 pl-70">
+              <div className="section-wrapper mb-40">
+                <div className="tpbanner__sub-title mb-15">
+                  <span>WORKFLOW</span>
+                  <i>
+                    <svg
+                      width={150}
+                      height={40}
+                      viewBox="0 0 150 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect
+                        width={150}
+                        height={40}
+                        fill="url(#pattern3)"
+                        fillOpacity="0.1"
+                      />
+                      <defs>
+                        <pattern
+                          id="pattern3"
+                          patternContentUnits="objectBoundingBox"
+                          width={1}
+                          height={1}
+                        >
+                          <use
+                            xlinkHref="#image0_859_3410"
+                            transform="translate(-0.0584971) scale(0.00611611 0.0203396)"
+                          />
+                        </pattern>
+                        <image
+                          id="image0_859_3410"
+                          width={180}
+                          height={50}
+                          xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAyCAYAAAD1JPH3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmVkYTJiM2ZhYywgMjAyMS8xMS8xNy0xNzoyMzoxOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUMyMzkwQTczMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUMyMzkwQTYzMTM3MTFFRDg3NUZBOUZCRDk1MThFMTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjFBQkIwMjIzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjFBQkIwMjMzMTA2MTFFREEzRkNBQzVFOTRFRTVERTgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5lgZ3iAAAB2ElEQVR42uzd7U3CUBiA0Wr4DxvQDWQE4gS6gSO6ibhB2aBMoCG5ja83pVRaSSnnJE2/MII+t7386sPz21dxQ1ZpKdNSpPUynItL/nNd6rSc2t6n/Sot+TYTsJhgrJsU6TqLt7zS779EE3ad1vuwvwuDg5kF3QQao92E47fq3ICrQ/RN8LsQPBMPOob7lEV8j5o7z6Yj+Cbwzyx+U5orB32MdCvcwcFv0/ZLx5SmubrHAVCZ0lwW9CrEu07rcsC8k/GmNPk8vg7hx2P13K/4fYP+6LhdcjvR5wMgrmP0h5bXxdecmjadu1N0ffFuOxc/zzKcP65fhwQt5nkOgGJu08NH/1cEDYIGQYOgETQIGgQNggZBI2gQNAgaBA2CRtAgaBA0CBoEjaBB0CBoEDQIGkGDoEHQIGgQNIIGQYOgQdAgaAQNE7aY+Ptre7JSn6ct9VWe2UfQvx4XFuPbZ+fz1/5HsGPEHh831mw359bhWH6OCQf9Xvw8v67OQmyLcg6GfJ4Yd769Dvviv+yuXQ0N+tXf8aKpUtUz/rJlvWw5Pmf5RfIQ7vJV0fO55wvtTSL+3R+mQasTd4BlyzRpdeWBEKeL+aC+yt1d0PczDSpH/PJbjfi+RvUtwADssXzgKiX3gwAAAABJRU5ErkJggg=="
+                        />
+                      </defs>
+                    </svg>
+                  </i>
+                </div>
+                <h5 className="section-title-4 section-title-4-2">
+                  Cadre de travail
+                </h5>
+              </div>
+              <ul className="feature-list-4">
+                <li>
+                  <div className="feature-list-4-item p-relative d-flex">
+                    <div className="feature-list-4-icon ">
+                      <div className="feature-list-bg p-relative">
+                        <i>
+                          <svg
+                            width={44}
+                            height={40}
+                            viewBox="0 0 44 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g style={{ mixBlendMode: "multiply" }}>
+                              <path
+                                className="main-bg"
+                                d="M4.66766 18.8519C-4.37425 32.8161 8.5593 40 19.4834 40C30.2244 40 42.3709 35.9136 42.3709 23.3559C42.3655 -8.96311 20.1854 -5.10428 4.66766 18.8519Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <path
+                              d="M0.886829 32.563C0.845942 32.563 0.805948 32.5509 0.771881 32.5281C0.737814 32.5053 0.711194 32.4729 0.695366 32.4349C0.679538 32.3968 0.675208 32.355 0.682925 32.3145C0.690641 32.274 0.710058 32.2367 0.738733 32.2073L8.96478 23.9395C9.00472 23.9178 9.05069 23.9101 9.09546 23.9176C9.14022 23.9251 9.18125 23.9474 9.21208 23.981C9.24291 24.0145 9.2618 24.0575 9.26578 24.1031C9.26975 24.1487 9.25859 24.1943 9.23404 24.2328L1.03493 32.5033C1.01546 32.5227 0.992326 32.538 0.966886 32.5483C0.941447 32.5585 0.914223 32.5635 0.886829 32.563V32.563Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M33.901 20.2052C33.8744 20.2053 33.8481 20.2001 33.8236 20.1899C33.7991 20.1796 33.7769 20.1645 33.7583 20.1455C33.7201 20.1064 33.6987 20.0537 33.6987 19.9989C33.6987 19.944 33.7201 19.8914 33.7583 19.8522C34.1056 19.4911 42.2751 11.0306 42.9887 10.55C43.0343 10.5237 43.0882 10.5159 43.1393 10.5281C43.1905 10.5403 43.2351 10.5717 43.2642 10.6159C43.2933 10.66 43.3047 10.7137 43.296 10.766C43.2873 10.8183 43.2593 10.8653 43.2175 10.8975C42.6548 11.2749 36.4132 17.6991 34.0625 20.1428C34.0415 20.1642 34.0163 20.1808 33.9884 20.1916C33.9606 20.2023 33.9308 20.207 33.901 20.2052V20.2052Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </i>
+                        <b>01</b>
+                        <span className="feature-bg-border-1" />
+                        <span className="feature-bg-border-2" />
+                        <span className="feature-bg-border-3" />
+                        <span className="feature-bg-border-4" />
+                      </div>
+                    </div>
+                    <div className="feature-list-4-content">
+                      <h4 className="title">Analyse</h4>
+                      <p>
+                        Nous commençons par comprendre vos besoins et vos
+                        objectifs. Notre équipe prend le temps d'analyser votre
+                        situation actuelle, d'identifier les défis spécifiques
+                        et de définir plan de conception efficace.
+                      </p>
+                    </div>
+                    <div className="feature-4-shape-1 d-none d-md-block">
+                      <svg
+                        className="line-dash-path"
+                        width={38}
+                        height={122}
+                        viewBox="0 0 38 122"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0.279297 1C41.9846 20.0005 55.1988 87.9525 2.74393 121.294"
+                          stroke="#A7ACB3"
+                          strokeDasharray="4 4"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="feature-list-4-item p-relative pl-100 d-flex">
+                    <div className="feature-list-4-icon ">
+                      <div className="feature-list-bg p-relative">
+                        <i>
+                          <svg
+                            width={44}
+                            height={40}
+                            viewBox="0 0 44 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g style={{ mixBlendMode: "multiply" }}>
+                              <path
+                                className="main-bg main-bg-2"
+                                d="M4.66766 18.8519C-4.37425 32.8161 8.5593 40 19.4834 40C30.2244 40 42.3709 35.9136 42.3709 23.3559C42.3655 -8.96311 20.1854 -5.10428 4.66766 18.8519Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <path
+                              d="M0.886829 32.563C0.845942 32.563 0.805948 32.5509 0.771881 32.5281C0.737814 32.5053 0.711194 32.4729 0.695366 32.4349C0.679538 32.3968 0.675208 32.355 0.682925 32.3145C0.690641 32.274 0.710058 32.2367 0.738733 32.2073L8.96478 23.9395C9.00472 23.9178 9.05069 23.9101 9.09546 23.9176C9.14022 23.9251 9.18125 23.9474 9.21208 23.981C9.24291 24.0145 9.2618 24.0575 9.26578 24.1031C9.26975 24.1487 9.25859 24.1943 9.23404 24.2328L1.03493 32.5033C1.01546 32.5227 0.992326 32.538 0.966886 32.5483C0.941447 32.5585 0.914223 32.5635 0.886829 32.563V32.563Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M33.901 20.2052C33.8744 20.2053 33.8481 20.2001 33.8236 20.1899C33.7991 20.1796 33.7769 20.1645 33.7583 20.1455C33.7201 20.1064 33.6987 20.0537 33.6987 19.9989C33.6987 19.944 33.7201 19.8914 33.7583 19.8522C34.1056 19.4911 42.2751 11.0306 42.9887 10.55C43.0343 10.5237 43.0882 10.5159 43.1393 10.5281C43.1905 10.5403 43.2351 10.5717 43.2642 10.6159C43.2933 10.66 43.3047 10.7137 43.296 10.766C43.2873 10.8183 43.2593 10.8653 43.2175 10.8975C42.6548 11.2749 36.4132 17.6991 34.0625 20.1428C34.0415 20.1642 34.0163 20.1808 33.9884 20.1916C33.9606 20.2023 33.9308 20.207 33.901 20.2052V20.2052Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </i>
+                        <b>02</b>
+                        <span className="feature-bg-border-1" />
+                        <span className="feature-bg-border-2" />
+                        <span className="feature-bg-border-3" />
+                        <span className="feature-bg-border-4" />
+                      </div>
+                    </div>
+                    <div className="feature-list-4-content">
+                      <h4 className="title">Conception</h4>
+                      <p>
+                        Ensuite, nous concevons des solutions sur mesure
+                        adaptées à vos besoins. Pour tous nos services, nous nous assurons que
+                        chaque projet est bien pensé et aligné avec vos
+                        objectifs stratégiques.
+                      </p>
+                    </div>
+                    <div className="feature-4-shape-2 d-none d-md-block">
+                      <svg
+                        className="line-dash-path"
+                        width={42}
+                        height={122}
+                        viewBox="0 0 42 122"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M41.3076 1.22192C-1.33493 18.0137 -18.0874 85.181 32.5507 121.222"
+                          stroke="#A7ACB3"
+                          strokeDasharray="4 4"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="feature-list-4-item pl-30 d-flex">
+                    <div className="feature-list-4-icon ">
+                      <div className="feature-list-bg p-relative">
+                        <i>
+                          <svg
+                            width={44}
+                            height={40}
+                            viewBox="0 0 44 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g style={{ mixBlendMode: "multiply" }}>
+                              <path
+                                className="main-bg main-bg-3"
+                                d="M4.66766 18.8519C-4.37425 32.8161 8.5593 40 19.4834 40C30.2244 40 42.3709 35.9136 42.3709 23.3559C42.3655 -8.96311 20.1854 -5.10428 4.66766 18.8519Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <path
+                              d="M0.886829 32.563C0.845942 32.563 0.805948 32.5509 0.771881 32.5281C0.737814 32.5053 0.711194 32.4729 0.695366 32.4349C0.679538 32.3968 0.675208 32.355 0.682925 32.3145C0.690641 32.274 0.710058 32.2367 0.738733 32.2073L8.96478 23.9395C9.00472 23.9178 9.05069 23.9101 9.09546 23.9176C9.14022 23.9251 9.18125 23.9474 9.21208 23.981C9.24291 24.0145 9.2618 24.0575 9.26578 24.1031C9.26975 24.1487 9.25859 24.1943 9.23404 24.2328L1.03493 32.5033C1.01546 32.5227 0.992326 32.538 0.966886 32.5483C0.941447 32.5585 0.914223 32.5635 0.886829 32.563V32.563Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M33.901 20.2052C33.8744 20.2053 33.8481 20.2001 33.8236 20.1899C33.7991 20.1796 33.7769 20.1645 33.7583 20.1455C33.7201 20.1064 33.6987 20.0537 33.6987 19.9989C33.6987 19.944 33.7201 19.8914 33.7583 19.8522C34.1056 19.4911 42.2751 11.0306 42.9887 10.55C43.0343 10.5237 43.0882 10.5159 43.1393 10.5281C43.1905 10.5403 43.2351 10.5717 43.2642 10.6159C43.2933 10.66 43.3047 10.7137 43.296 10.766C43.2873 10.8183 43.2593 10.8653 43.2175 10.8975C42.6548 11.2749 36.4132 17.6991 34.0625 20.1428C34.0415 20.1642 34.0163 20.1808 33.9884 20.1916C33.9606 20.2023 33.9308 20.207 33.901 20.2052V20.2052Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </i>
+                        <b>03</b>
+                        <span className="feature-bg-border-1" />
+                        <span className="feature-bg-border-2" />
+                        <span className="feature-bg-border-3" />
+                        <span className="feature-bg-border-4" />
+                      </div>
+                    </div>
+                    <div className="feature-list-4-content">
+                      <h4 className="title">Suivi</h4>
+                      <p>
+                        Enfin, nous mettons en œuvre les solutions développées
+                        et assurons un suivi rigoureux pour garantir leur
+                        succès. Nous restons à vos côtés pour ajuster et
+                        optimiser les résultats en fonction des retours et des
+                        performances, assurant ainsi une amélioration continue
+                        et un impact durable.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
