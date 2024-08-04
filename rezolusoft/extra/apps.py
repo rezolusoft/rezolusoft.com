@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class HomeConfig(AppConfig):
+class ExtraConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'rezolusoft.home'
+    name = 'rezolusoft.extra'

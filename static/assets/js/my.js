@@ -1,13 +1,14 @@
-document.querySelector(".offcanvas-open-btn").addEventListener("click", function () {
-  
-    document.querySelector(".offcanvas__area").classList.add("offcanvas-opened");
-    document.querySelector(".body-overlay").classList.add("opened");
-}
-);
-document.querySelector(".offcanvas-close-btn").addEventListener("click", function () {
-
-    document.querySelector(".offcanvas__area").classList.remove("offcanvas-opened");
-    document.querySelector(".body-overlay").classList.remove("opened");
-}
-);
+var typed = new Typed("#headline1", {
+  strings: [
+    "qui transforment vos idées.",
+    "pour relever vos  défis.",
+    "qui boostent vos activités.",
+    "qui simplifient la vie.",
+  ],
+  typeSpeed: 75,
+  loop: true,
+  loopCount: 3,
+  backSpeed: 20,
+  smartBackspace: true,
+});
 

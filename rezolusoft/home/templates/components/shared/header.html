@@ -1,0 +1,174 @@
+{% load static %}
+<header>
+  <div
+    id="header-sticky"
+    class="tptransparent__header header-five pl-185 pr-185"
+  >
+    <div class="container-fluid">
+      <div class="tp-mega-menu-wrapper">
+        <div class="row align-items-center">
+          <div class="col-xl-2 col-lg-6 col-sm-4 col-6">
+            <div class="tplogo__area">
+              <a href="index.html"
+                ><img src="{% static "assets/img/logo/logo-orange.svg" %}" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-5 d-none d-xl-block">
+            <div class="tpmenu__area tpmenu-5 main-mega-menu">
+              <nav class="tp-main-menu-content">
+                <ul>
+                  <li><a href="#about">A propos</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#services">Projets</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-sm-8 col-6">
+            <div
+              class="tpheader__right d-flex align-items-center justify-content-end"
+            >
+              <div
+                class="header-bottom__lang d-none d-lg-block d-flex align-items-center justify-content-end"
+              >
+                <ul>
+                  <li class="has-dropdown has-megamenu">
+                    <a
+                      ><span
+                        ><svg
+                          class="child-1"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.00098 15C11.867 15 15.001 11.866 15.001 8C15.001 4.13401 11.867 1 8.00098 1C4.13498 1 1.00098 4.13401 1.00098 8C1.00098 11.866 4.13498 15 8.00098 15Z"
+                            stroke="#9A9B9C"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M5.19973 1.7002H5.89973C4.53473 5.7882 4.53473 10.2122 5.89973 14.3002H5.19973"
+                            stroke="#9A9B9C"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M10.1016 1.7002C11.4666 5.7882 11.4666 10.2122 10.1016 14.3002"
+                            stroke="#9A9B9C"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M1.70117 10.8001V10.1001C5.78917 11.4651 10.2132 11.4651 14.3012 10.1001V10.8001"
+                            stroke="#9A9B9C"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M1.70117 5.90021C5.78917 4.53521 10.2132 4.53521 14.3012 5.90021"
+                            stroke="#9A9B9C"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path></svg
+                        >Français<svg
+                          class="child-2"
+                          width="10"
+                          height="6"
+                          viewBox="0 0 10 6"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 1L5 5L9 1"
+                            stroke="#55585B"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path></svg></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="tpheader-btn-5 d-none d-md-block ml-25">
+                  <a href="sign-in.html">Devis gratuit</a>
+                </div>
+                <div class="offcanvas-btn d-xl-none ml-20">
+                  <button class="offcanvas-open-btn">
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="offcanvas__area">
+  <div class="offcanvas__wrapper">
+    <div class="offcanvas__close">
+      <button class="offcanvas__close-btn offcanvas-close-btn">
+        <svg
+          width="12"
+          height="12"
+          viewBox="0 0 12 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 1L1 11"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M1 1L11 11"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div class="offcanvas__content">
+      <div
+        class="offcanvas__top mb-50 d-flex justify-content-between align-items-center"
+      >
+        <div class="offcanvas__logo logo">
+          <a href="home-main.html"
+            ><img width="150" src="{% static "assets/img/logo/logo-r.svg" %}" alt="logo"
+          /></a>
+        </div>
+      </div>
+      <div class="tp-main-menu-mobile mb-35"></div>
+      <div class="offcanvas__btn">
+        <a href="contact.html" class="tp-btn w-100">Devis gratuit</a>
+      </div>
+      <div class="offcanvas__contact mb-40">
+        <p class="offcanvas__contact-call">
+          <a href="tel:+964-742-44-763">+229 98 87 90 49</a>
+        </p>
+        <p class="offcanvas__contact-mail">
+          <a href="mailto:info@harry.com">info@rezolusoft.com</a>
+        </p>
+      </div>
+      <div class="offcanvas__social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a
+        ><a href="#"><i class="fab fa-twitter"></i></a
+        ><a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="body-overlay"></div>
