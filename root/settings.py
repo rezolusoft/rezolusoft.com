@@ -44,8 +44,11 @@ THIRD_PARTY_APPS = []
 
 RESOLUSOFT_CORE_APPS = [
     'rezolusoft',
+    'rezolusoft.abstract',
     'rezolusoft.home',
-    'rezolusoft.extra'
+    'rezolusoft.extra',
+    'rezolusoft.service',
+    'rezolusoft.work',
 ]
 
 INSTALLED_APPS = DJANGO_CORE_APPS+RESOLUSOFT_CORE_APPS+THIRD_PARTY_APPS
