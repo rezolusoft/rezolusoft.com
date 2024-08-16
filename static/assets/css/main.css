@@ -21652,6 +21652,13 @@ div.price-open {
   height: 250px;
   object-fit: cover;
 }
+.services-quality-thumb{
+  img {
+
+    height: auto;
+    max-width: none;
+  }
+}
 @media (max-width: 767px) {
   .services-quality-thumb {
     min-width: 100%;
