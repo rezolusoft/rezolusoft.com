@@ -1,0 +1,9 @@
+#CORE
+Django==3.2.21
+
+#THIRD_PARTY
+django_tinymce==4.1.0
+
+# STATIC
+whitenoise==6.7.0
+
