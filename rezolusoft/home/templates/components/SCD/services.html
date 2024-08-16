@@ -1,0 +1,100 @@
+{% load static %}
+<section class="quality-services-area quality-services-bg pb-125 pt-95 mb-120">
+         <div class="container">
+            <div class="row">
+              {% comment %}  <div class="col-lg-12">
+                  <div class="optimize-subtitle mb-60">
+                     <span>Value Proposition</span>
+                     <h5 class="section-title-4 fs-54">High-quality <br> Link building services</h5>
+                  </div>
+               </div> {% endcomment %}
+            </div>
+            <div class="row align-items-center">
+               <div class="col-lg-3">
+                  <div class="quality-services-nav">
+                     <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          
+                          {% for service in services %}
+                          {% if forloop.first %}
+                          <button class="nav-link active" id="v-pills-{{service.code}}-tab" data-bs-toggle="pill" data-bs-target="#v-pills-{{service.code}}" type="button" role="tab" aria-controls="v-pills-{{service.code}}" aria-selected="true">
+                           <span>
+                             
+                                 <i class="{{service.icon}}"></i>
+                            
+                              {{service.name}}
+                           </span>
+                        </button>
+                          {% else %}
+
+                          <button class="nav-link" id="v-pills-{{service.code}}-tab" data-bs-toggle="pill" data-bs-target="#v-pills-{{service.code}}" type="button" role="tab" aria-controls="v-pills-{{service.code}}" aria-selected="false">
+                           <span>
+                             
+                                 <i class="{{service.icon}}"></i>
+                            
+                              {{service.name}}
+                           </span>
+                        </button>
+                          
+                          {% endif %}
+
+                     
+                         
+                          {% endfor %}
+                        
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-9">
+                  <div class="services-quality-tab">
+                     <div class="tab-content" id="v-pills-tabContent">
+
+                        {% for service in services %}
+
+                        {% if forloop.first %}
+
+                        <div class="tab-pane fade active show" id="v-pills-{{service.code}}" role="tabpanel" aria-labelledby="v-pills-{{service.code}}-tab" tabindex="0">
+                           <div class="services-quality-wrapper">
+                              <div class="services-quality-thumb">
+                                 <img src="{% static "assets/img/bg/" %}{{service.illustration}}" width="300" alt="">
+                              </div>
+                              <div class="services-quality-content">
+                                {% comment %}  <h5 class="services-quality-title">Que faisons nous en 
+                                    {{service.name}} ?</h5> {% endcomment %}
+                                 {{service.info|safe}}
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+
+                        {% else %}
+
+
+                        <div class="tab-pane fade" id="v-pills-{{service.code}}" role="tabpanel" aria-labelledby="v-pills-{{service.code}}-tab" tabindex="0">
+                           <div class="services-quality-wrapper">
+                              <div class="services-quality-thumb">
+                                 <img src="{% static "assets/img/bg/" %}{{service.illustration}}" width="300" alt="">
+                              </div>
+                              <div class="services-quality-content">
+                                {% comment %}  <h5 class="services-quality-title">Que faisons nous en 
+                                    {{service.name}} ?</h5> {% endcomment %}
+                                 {{service.info|safe}}
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+
+                        
+                        {% endif %}
+                       
+                        {% endfor %}
+                       
+                       
+                       
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
