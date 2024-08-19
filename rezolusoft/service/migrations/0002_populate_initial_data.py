@@ -6,30 +6,30 @@ from rezolusoft.service.models import Category
 
 def populate_services_categorie(apps, schema_editor):
     data = [
-        {
+        """ {
             'code': 'software_dev',
             'name': 'Développement de Logiciel',
-            'description': """Des sites web et applications réactifs, performants, sécurisées et adaptés à vos besoins.""",
-            'info': """Le pôle de Développement logiciel chez Rezolusoft est dédié à la création de solutions numériques sur mesure pour répondre à vos besoins spécifiques. Notre équipe d'experts en développement travaille avec les technologies les plus récentes pour concevoir des logiciels robustes, évolutifs et adaptés à vos exigences. Que ce soit pour des applications mobiles, des plateformes web, ou des logiciels d'entreprise, nous transformons vos idées en produits performants.""",
+            'description': "Des sites web et applications réactifs, performants, sécurisées et adaptés à vos besoins.",
+            'info': "Le pôle de Développement logiciel chez Rezolusoft est dédié à la création de solutions numériques sur mesure pour répondre à vos besoins spécifiques. Notre équipe d'experts en développement travaille avec les technologies les plus récentes pour concevoir des logiciels robustes, évolutifs et adaptés à vos exigences. Que ce soit pour des applications mobiles, des plateformes web, ou des logiciels d'entreprise, nous transformons vos idées en produits performants.",
         },
         {
             'code': 'design_ux',
             'name': 'Design Graphique et Ux',
-            'description': """L'identité visuelle qui correspond à votre marque ou
-                        produit.""",
-            'info': """Le pôle Design graphique et UX de Rezolusoft se consacre à créer des expériences visuelles et interactives qui captivent les utilisateurs tout en renforçant l’identité de marque de nos clients. Nous croyons que le design est plus qu'une simple esthétique : il s'agit d'une expérience globale qui combine l'attrait visuel, l'ergonomie et la facilité d'utilisation. Notre équipe de designers talentueux travaille pour transformer vos idées en créations visuelles percutantes et intuitives.""",
+            'description': "L'identité visuelle qui correspond à votre marque ou
+                        produit.",
+            'info': ""Le pôle Design graphique et UX de Rezolusoft se consacre à créer des expériences visuelles et interactives qui captivent les utilisateurs tout en renforçant l’identité de marque de nos clients. Nous croyons que le design est plus qu'une simple esthétique : il s'agit d'une expérience globale qui combine l'attrait visuel, l'ergonomie et la facilité d'utilisation. Notre équipe de designers talentueux travaille pour transformer vos idées en créations visuelles percutantes et intuitives.",
         },
         {
             'code': 'content',
             'name': 'Création de Contenu',
-            'description': """Engager votre audience avec des contenus pertinents et
-                        de qualité.""",
-            'info': """Le pôle Création de contenu de Rezolusoft se spécialise dans la production de contenus captivants et pertinents qui résonnent avec votre audience cible. Que ce soit pour le web, les réseaux sociaux, ou des campagnes marketing, notre équipe de créateurs talentueux élabore des textes, des vidéos, et des visuels qui racontent votre histoire de manière authentique et engageante. Nous transformons vos idées en contenus percutants qui renforcent votre présence en ligne et soutiennent vos objectifs commerciaux.""",
-        }
+            'description': "Engager votre audience avec des contenus pertinents et
+                        de qualité.",
+            'info': "Le pôle Création de contenu de Rezolusoft se spécialise dans la production de contenus captivants et pertinents qui résonnent avec votre audience cible. Que ce soit pour le web, les réseaux sociaux, ou des campagnes marketing, notre équipe de créateurs talentueux élabore des textes, des vidéos, et des visuels qui racontent votre histoire de manière authentique et engageante. Nous transformons vos idées en contenus percutants qui renforcent votre présence en ligne et soutiennent vos objectifs commerciaux.",
+        } """
     ]
 
     for category in data:
-        ServiceCategory.objects.create(**category)
+        Category.objects.create(**category)
 
 
 class Migration(migrations.Migration):
