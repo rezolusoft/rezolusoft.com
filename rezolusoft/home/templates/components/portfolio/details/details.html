@@ -1,0 +1,163 @@
+{% load static %}
+<section class="portfolio-area-start pb-70">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-12">
+             <div class="portfolio-details mb-95">
+                <div class="portfolio-details-top text-center">
+                   <h4 class="portfolio-details-title mb-50">{{work.name}}</h4>
+                </div>
+                <ul class="portfolio-details-info text-center pl-170 pr-170">
+                   <li>
+                      <div class="portfolio-details-info-item">
+                         <span>Client</span>
+                         <p>{{work.client}}</p>
+                      </div>
+                   </li>
+                   <li>
+                      <div class="portfolio-details-info-item">
+                         <span>Service</span>
+                         <p>{{work.service}}</p>
+                      </div>
+                   </li>
+                   <li>
+                      <div class="portfolio-details-info-item">
+                         <span>Durée</span>
+                         <p>{{work.duration}}</p>
+                      </div>
+                   </li>
+                   <li>
+                      <div class="portfolio-details-info-item">
+                         <span>Site Web</span>
+                         <p>{{work.website}}</p>
+                      </div>
+                   </li>
+                </ul>
+                <div class="portfolio-details-thumb">
+                   <img src="{{work.banner.url}}" alt="">
+                </div>
+                <div class="portfolio-details-content pt-65 pl-100 pr-100">
+                   <div class="portfolio-details-challenge mb-50">
+                      <div class="row">
+                         <div class="col-lg-3 col-md-3">
+                            <div class="challenge-title">
+                               Notre <br> Challenge
+                            </div>
+                         </div>
+                         <div class="col-lg-9 col-md-9">
+                            <div class="portfolio-details-challenge-text pl-50 mb-35">
+                               {{work.challenge | safe}}
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="portfolio-details-result mb-55">
+                      <h4 class="challenge-title">Solutions</h4>
+                     {{work.solution | safe}}
+                   </div>
+                </div>
+                <div class="portfolio-details-thumb">
+                   <img src="assets/img/portfolio/details/portfolio-details-2.jpg" alt="">
+                </div>
+             
+              {% comment %}   <div class="portfolio-details-more d-flex align-items-center justify-content-between mt-65">
+                   <a href="portfolio-details.html" class="portfolio-details-prev d-flex align-items-center">
+                      <div class="portfolio-details-prev-icon d-none d-md-block">
+                         <span>
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M7 13L1 7L7 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                         </span>
+                      </div>
+                      <div class="portfolio-details-prev-content">
+                         <span>Prev</span>
+                         <p>Applications Design</p>
+                      </div>
+                   </a>
+                   <a class="" href="portfolio.html">
+                      <span>
+                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 7.52V2.98C21 1.57 20.36 1 18.77 1H14.73C13.14 1 12.5 1.57 12.5 2.98V7.51C12.5 8.93 13.14 9.49 14.73 9.49H18.77C20.36 9.5 21 8.93 21 7.52Z" stroke="#0E1331" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path opacity="0.4" d="M21 18.77V14.73C21 13.14 20.36 12.5 18.77 12.5H14.73C13.14 12.5 12.5 13.14 12.5 14.73V18.77C12.5 20.36 13.14 21 14.73 21H18.77C20.36 21 21 20.36 21 18.77Z" stroke="#0E1331" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path opacity="0.4" d="M9.5 7.52V2.98C9.5 1.57 8.86 1 7.27 1H3.23C1.64 1 1 1.57 1 2.98V7.51C1 8.93 1.64 9.49 3.23 9.49H7.27C8.86 9.5 9.5 8.93 9.5 7.52Z" stroke="#0E1331" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.5 18.77V14.73C9.5 13.14 8.86 12.5 7.27 12.5H3.23C1.64 12.5 1 13.14 1 14.73V18.77C1 20.36 1.64 21 3.23 21H7.27C8.86 21 9.5 20.36 9.5 18.77Z" stroke="#0E1331" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                         </svg>
+                      </span>
+                   </a>
+                   <a href="portfolio-details.html" class="portfolio-details-next d-flex align-items-center justify-content-md-end">
+                      <div class="portfolio-details-next-content text-md-end">
+                         <span>Next</span>
+                         <p>Creative Landing Page</p>
+                      </div>
+                      <div class="portfolio-details-next-icon d-none d-md-block">
+                         <span>
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M1 13L7 7L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                         </span>
+                      </div>
+                   </a>
+                </div> {% endcomment %}
+             </div>
+          </div>
+       </div>
+     {% comment %}   <div class="row">
+          <div class="col-lg-12">
+             <div class="portfolio-details-related">
+                <h4 class="portfolio-details-related-title">Related Project:</h4>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-lg-4 col-md-6">
+             <div class="portfolio-inner-item-2 mb-40">
+                <div class="portfolio-inner-thumb-2">
+                   <img src="assets/img/portfolio/portfolio-2/portfolio-1.jpg" alt="">
+                </div>
+                <div class="portfolio-inner-content-2">
+                   <div class="portfolio-inner-title-2"><a href="portfolio-details.html">Ad Campaign</a></div>
+                   <p>They produce really great content that also performs well when it comes to SEO.</p>
+                   <div class="portfolio-inner-tag-2">
+                      <a href="#">Branding</a>
+                      <a href="#">Website</a>
+                      <a href="#">Design</a>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+             <div class="portfolio-inner-item-2 mb-40">
+                <div class="portfolio-inner-thumb-2">
+                   <img src="assets/img/portfolio/portfolio-2/portfolio-2.jpg" alt="">
+                </div>
+                <div class="portfolio-inner-content-2">
+                   <div class="portfolio-inner-title-2"><a href="portfolio-details.html">Digital Art</a></div>
+                   <p>They produce really great content that also performs well when it comes to SEO.</p>
+                   <div class="portfolio-inner-tag-2">
+                      <a href="#">Branding</a>
+                      <a href="#">Website</a>
+                      <a href="#">Design</a>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+             <div class="portfolio-inner-item-2 mb-40">
+                <div class="portfolio-inner-thumb-2">
+                   <img src="assets/img/portfolio/portfolio-2/portfolio-3.jpg" alt="">
+                </div>
+                <div class="portfolio-inner-content-2">
+                   <div class="portfolio-inner-title-2"><a href="portfolio-details.html">Landing Page</a></div>
+                   <p>They produce really great content that also performs well when it comes to SEO.</p>
+                   <div class="portfolio-inner-tag-2">
+                      <a href="#">Branding</a>
+                      <a href="#">Website</a>
+                      <a href="#">Design</a>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div> {% endcomment %}
+    </div>
+ </section>
+ <!-- portfolio-details-area-end -->

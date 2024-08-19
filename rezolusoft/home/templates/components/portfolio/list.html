@@ -1,0 +1,63 @@
+{% load static %}
+
+  <!-- portfolio-area-start -->
+  <section class="portfolio-area pt-100 pb-110">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-6">
+             <div class="portfolio-inner mb-50">
+                <h4 class="portfolio-inner-head">Nos <br>Réalisations</h4>
+             </div>
+          </div>
+          <div class="col-lg-6 align-self-end">
+             <div class="portfolio-inner-masonary masonary-menu mb-50">
+                <button class="active m-1" data-filter="*"><span>Tous</span></button>
+                {% for category in categories %}
+                <button class="m-1" data-filter=".{{category.code}}"><span>{{category.name}}</span></button>
+                {% endfor %}
+               
+             </div>
+          </div>
+       </div>
+       <div class="row grid">
+         {% for work in works %}
+
+         <div class="col-lg-6 col-md-6 grid-item {{work.service.category.code}}">
+            <div class="portfolio-inner-item mb-60">
+               <div class="portfolio-inner-thumb">
+                  <img src="{{work.preview.url}}" alt="">
+               </div>
+               <div class="portfolio-inner-content">
+                  <span>{{work.service.category}}</span>
+                  <h4 class="portfolio-inner-title"><a href="work/{{work.slug}}">{{work.name}}</a></h4>
+               </div>
+            </div>
+         </div>
+
+         {% endfor %}
+
+       </div>
+       <div class="row">
+          <div class="col-lg-12">
+             <div class="portfolio-inner-btn text-center pt-10">
+                <a href="/work">
+                   <span>
+                      <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                         <path d="M1 1.78101V6.47666H5.90909" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                         <path d="M18.9989 14.3023V9.60669H14.0898" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                         <path
+                            d="M16.9464 5.6938C16.5314 4.57216 15.8262 3.56933 14.8964 2.77891C13.9667 1.98849 12.8428 1.43623 11.6296 1.17365C10.4164 0.911084 9.15338 0.946763 7.95848 1.27736C6.76358 1.60796 5.6757 2.22271 4.79636 3.06424L1 6.47641M19 9.60685L15.2036 13.019C14.3243 13.8605 13.2364 14.4753 12.0415 14.8059C10.8466 15.1365 9.58363 15.1722 8.37042 14.9096C7.1572 14.647 6.03329 14.0948 5.10356 13.3043C4.17384 12.5139 3.46859 11.5111 3.05364 10.3895"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                      </svg></span>
+                   Voir Plus
+                </a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <!-- portfolio-area-end -->
