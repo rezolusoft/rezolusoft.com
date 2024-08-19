@@ -6,7 +6,9 @@ from rezolusoft.service.models import Category
 
 def populate_services_categorie(apps, schema_editor):
     data = [
-        """ {
+       
+    ]
+    """ {
             'code': 'software_dev',
             'name': 'Développement de Logiciel',
             'description': "Des sites web et applications réactifs, performants, sécurisées et adaptés à vos besoins.",
@@ -26,7 +28,6 @@ def populate_services_categorie(apps, schema_editor):
                         de qualité.",
             'info': "Le pôle Création de contenu de Rezolusoft se spécialise dans la production de contenus captivants et pertinents qui résonnent avec votre audience cible. Que ce soit pour le web, les réseaux sociaux, ou des campagnes marketing, notre équipe de créateurs talentueux élabore des textes, des vidéos, et des visuels qui racontent votre histoire de manière authentique et engageante. Nous transformons vos idées en contenus percutants qui renforcent votre présence en ligne et soutiennent vos objectifs commerciaux.",
         } """
-    ]
 
     for category in data:
         Category.objects.create(**category)
