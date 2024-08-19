@@ -1,4 +1,5 @@
 from .settings import *
+import pymysql
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -33,3 +34,6 @@ ALLOWED_HOSTS = ['rezolusoft.com', 'www.rezolusoft.com',]
 
 STATIC_ROOT = os.path.join('/home/rezogsyk/rezolusoft/static/')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+
+pymysql.version_info = (1, 4, 2, "final", 0)
+pymysql.install_as_MySQLdb()
