@@ -1479,7 +1479,7 @@
 		autoplay: true,
 		arrows: false,
 		slidesToShow: 6,
-		slidesToScroll: 1,
+		slidesToScroll: 2,
 		responsive: [
 			{
 				breakpoint: 1600,
@@ -1490,7 +1490,7 @@
 			{
 				breakpoint: 1400,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 4,
 				}
 			},
 			{
@@ -1502,19 +1502,19 @@
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 3,
 				}
 			},
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 1,
+					slidesToShow: 2,
 				}
 			},
 			{
 				breakpoint: 480,
 				settings: {
-					slidesToShow: 1,
+					slidesToShow: 2,
 				}
 			}
 		],
